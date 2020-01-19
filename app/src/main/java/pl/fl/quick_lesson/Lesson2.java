@@ -4,10 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.alphamovie.lib.AlphaMovieView;
 
 public class Lesson2 extends AppCompatActivity {
 
@@ -15,6 +19,7 @@ public class Lesson2 extends AppCompatActivity {
     ImageView img_1, img_2, img_3;
     OnSwipeTouchListener list;
     public static Activity fa;
+    private AlphaMovieView alphaMovieView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,12 @@ public class Lesson2 extends AppCompatActivity {
         LinearLayout linlay = findViewById(R.id.linlay);
         list= new OnSwipeTouchListener(this,"lesson2");
         linlay.setOnTouchListener(list);
+
+        alphaMovieView = (AlphaMovieView) findViewById(R.id.video_player);
+        String path = "android.resource://" + getPackageName() + "/" + R.raw.videoplayback;
+        Log.d("PATH",path);
+        alphaMovieView.setVideoFromUri(this,Uri.parse(path));
+
         txt_1 = findViewById(R.id.textView2);
         txt_2 = findViewById(R.id.textView3);
         txt_3 = findViewById(R.id.textView4);
@@ -46,6 +57,7 @@ public class Lesson2 extends AppCompatActivity {
     @Override
     protected void onResume() {
         list.changeOnScreen(true);
+        alphaMovieView.onResume();
         super.onResume();
     }
 
@@ -53,5 +65,11 @@ public class Lesson2 extends AppCompatActivity {
     public void onBackPressed() {
         MainActivity.main.getWindow();
         this.finish();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        alphaMovieView.onPause();
     }
 }
