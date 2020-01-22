@@ -39,9 +39,19 @@ public class Lesson1 extends AppCompatActivity {
         img_2 = findViewById(R.id.imageView2);
         img_3 = findViewById(R.id.imageView3);
 
-        txt_1.setText("Lesson 1");
-        txt_2.setText("laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat");
-        txt_3.setText("ulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+        txt_1.setText("Wytyczony w 1242 Rynek Główny we Wrocławiu od zarania istnienia służył jako plac targowy o wymiarach 212 x 175 metrów. Handlowano na nim m.in. pieczywem, tłuszczem, płótnem, wyrobami metalowymi. Na Rynku działały także punkty usługowe np. krawieckie i szewski. Początkowo działaność była prowadzona w drewnianych budach, a murowane obiekty pojawiły się dopiero pod koniec XIII wieku.\n" +
+                "\n" +
+                "Na samym Rynku Głównym jak i wokół niego skoncentrowane się liczne zabytki będące najcenniejszym skarbem dziedzictwa narodowego. Od rynku we wszystkich kierunkach odchodzi aż 11 uliczek. Za południowo-zachodnim narożnikiem Rynku Głównego znajduje się rynek pomocniczy zwany Placem Solnym.\n");
+        txt_2.setText("\n__________________________________________________\n\n\nStary Ratusz na Rynku Głównym\n" +
+                "W centrum Rynku Głównego zlokalizowany jest Stary Ratusz, którego budowa rozpoczęła się od 1299 roku. Ratusz był sukcesywnie rozbudowywany i modernizowany przez kolejne wieki dlatego widać w nim wpływy róznych epok z przewagą gotyku.\n" +
+                "Zabytkowy zegar astronomiczny na Starym Ratuszu\n" +
+                "Warto m.in zwrócić uwagę na zegar astronomiczny z jedną wskazówką i słońcem w centrum tarczy, który został tam umieszczony w 1580 roku. W podziemiach Ratusza znajduje się także Piwnica Świdnicka, która od zarania funkcjonowała jako piwiarnia.");
+        txt_3.setText("\n__________________________________________________\n\n\nNowy Ratusz na Rynku Głównym\n" +
+                "Wzniesiony w stylu neogotyckim w latach 1860-1863 Nowy Ratusz obecnie jest siedzibą Prezydenta Miasta Wrocławia. W podziemiach Nowego Ratusza znajduje się sławna restauracja Spiż.\n" +
+                "Pomnik Aleksandra Fredro\n" +
+                "Przed Nowym Ratuszem w 1956 roku został ustawiony pomnik Aleksandra Fredry dla przypomnienia wagi wspólnych losów wielu wrocławian i lwowian jakie wichry historii im zgotowały.\n" +
+                "Pręgierz na Rynku Głównym\n" +
+                "Przed Starym Ratuszem obecnie stoi od 1492 roku kamienny pręgierz. Pierwotnie w tym miejscu znajdował się ogrodzony i otoczony rowem plac, na którym osądzano winnych przestępstw..");
 
         img_1.setImageResource(R.drawable.bird_view_wroclaw);
         img_2.setImageResource(R.drawable.back_image);

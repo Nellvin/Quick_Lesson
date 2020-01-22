@@ -36,6 +36,7 @@ public class Lesson2 extends AppCompatActivity {
         String path = "android.resource://" + getPackageName() + "/" + R.raw.videoplayback;
         Log.d("PATH",path);
         alphaMovieView.setVideoFromUri(this,Uri.parse(path));
+        alphaMovieView.setOnTouchListener(new videoTouchListener(this, alphaMovieView));
 
         txt_1 = findViewById(R.id.textView2);
         txt_2 = findViewById(R.id.textView3);

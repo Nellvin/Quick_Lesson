@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
+        Paper.book().write("video", 0);
+        Paper.book().write("music", 0);
+
         ar= new ArrayList();
 
         lesson = findViewById(R.id.button4);
