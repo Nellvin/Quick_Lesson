@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="W którym roku został wytyczony rynek?"
+        android:text="Liczba krasnali we Wrocławiu"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
         android:textSize="20dp"/>
@@ -29,21 +29,21 @@
             android:id="@+id/radia_id1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="1422"
+            android:text="426"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radia_id2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="1242"
+            android:text="223"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radia_id3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="1224"
+            android:text="356"
             android:textSize="20dp" />
 
         <RadioButton
@@ -54,7 +54,7 @@
             android:backgroundTint="#1D31FF08"
             android:backgroundTintMode="add"
             android:buttonTint="#DBC726"
-            android:text="1424z"
+            android:text="500+"
             android:textSize="20dp" />
     </RadioGroup>
 

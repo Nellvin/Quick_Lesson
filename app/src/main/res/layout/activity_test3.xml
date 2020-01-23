@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="W którym roku został wytyczony rynek?"
+        android:text="W którym roku Tatarzy najechali Wrocław?"
         android:textStyle="bold"
         android:layout_marginLeft="10dp"
         android:textSize="20dp"/>
@@ -29,7 +29,7 @@
             android:id="@+id/radia_id1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="1422"
+            android:text="1241"
             android:textSize="20dp" />
 
         <RadioButton
@@ -43,7 +43,7 @@
             android:id="@+id/radia_id3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="1224"
+            android:text="1341"
             android:textSize="20dp" />
 
         <RadioButton

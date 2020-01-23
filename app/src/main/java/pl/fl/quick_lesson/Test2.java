@@ -20,16 +20,11 @@ public class Test2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test2);
-        // Bind the components to their respective objects
-        // by assigning their IDs
-        // with the help of findViewById() method
         submit = (Button)findViewById(R.id.submit);
         radioGroup = (RadioGroup)findViewById(R.id.groupradio);
 
-        // Uncheck or reset the radio buttons initially
         radioGroup.clearCheck();
 
-        // Add the Listener to the RadioGroup
         radioGroup.setOnCheckedChangeListener(
                 new RadioGroup
                         .OnCheckedChangeListener() {
