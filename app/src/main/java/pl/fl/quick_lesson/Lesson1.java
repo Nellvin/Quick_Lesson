@@ -56,6 +56,9 @@ public class Lesson1 extends AppCompatActivity {
         img_1.setImageResource(R.drawable.bird_view_wroclaw);
         img_2.setImageResource(R.drawable.back_image);
         img_3.setImageResource(R.drawable.bird_view_wroclaw);
+        txt_1.setTextSize(17f);
+        txt_2.setTextSize(17f);
+        txt_3.setTextSize(17f);
 
     }
 

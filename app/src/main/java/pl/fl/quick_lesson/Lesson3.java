@@ -31,7 +31,7 @@ public class Lesson3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson3);
 
-        button1=true;
+        button1=false;
         musicTime=(int)Paper.book().read("music");
 
         fa=this;
@@ -62,7 +62,7 @@ public class Lesson3 extends AppCompatActivity {
 //        img_1.setImageResource(R.drawable.bird_view_wroclaw);
 //        img_2.setImageResource(R.drawable.back_image);
 //        img_3.setImageResource(R.drawable.bird_view_wroclaw);
-        playbutton.setImageResource(R.drawable.pause1);
+        playbutton.setImageResource(R.drawable.pause2);
 
         playbutton.setOnClickListener(new View.OnClickListener() {
             @Override

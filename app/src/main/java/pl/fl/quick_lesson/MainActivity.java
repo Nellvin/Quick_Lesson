@@ -6,6 +6,7 @@ import io.paperdb.Paper;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -24,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Paper.init(this);
+        Paper.book().write("test1anwser", false);
+        Paper.book().write("test2anwser", false);
+        Paper.book().write("test3anwser", false);
+        Paper.book().write("test2id",0);
+        Paper.book().destroy();
         main = this;
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -39,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         results = findViewById(R.id.button6);
 
         lesson.setText("Lekcje");
-        test.setText("Test");
+        test.setText("Test1");
         results.setText("Wyniki");
 
         results.setEnabled(false);
@@ -63,6 +69,13 @@ public class MainActivity extends AppCompatActivity {
                 toast.show();
             }
         });
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, Test1.class);
+                startActivity(myIntent);
+            }
+        });
     }
 
     @Override
@@ -70,5 +83,18 @@ public class MainActivity extends AppCompatActivity {
         finish();
         System.exit(0);
 //        super.onBackPressed();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(Paper.book().read("test1anwser") != null){
+            if((boolean)(Paper.book().read("test1anwser")) == true){
+                Log.d("IFNULL", String.valueOf(Paper.book().read("test1")));
+            results.setEnabled(true);
+            }else{
+                results.setEnabled(false);
+            }
+        }
     }
 }

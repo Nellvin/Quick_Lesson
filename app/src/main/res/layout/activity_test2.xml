@@ -50,7 +50,11 @@
             android:id="@+id/radia_id4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="1424"
+            android:background="#C5E609"
+            android:backgroundTint="#1D31FF08"
+            android:backgroundTintMode="add"
+            android:buttonTint="#DBC726"
+            android:text="1424z"
             android:textSize="20dp" />
     </RadioGroup>
 
