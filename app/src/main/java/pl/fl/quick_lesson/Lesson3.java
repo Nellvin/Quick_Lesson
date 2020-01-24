@@ -10,6 +10,7 @@ import android.media.MediaTimestamp;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,7 +31,7 @@ public class Lesson3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson3);
-
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         button1=false;
         musicTime=(int)Paper.book().read("music");
 
@@ -78,6 +79,10 @@ public class Lesson3 extends AppCompatActivity {
                 }
             }
         });
+        Paper.book().write("3lesson",true);
+
+
+
     }
     @Override
     protected void onResume() {

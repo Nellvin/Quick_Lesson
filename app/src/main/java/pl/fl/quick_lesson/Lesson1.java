@@ -2,15 +2,15 @@ package pl.fl.quick_lesson;
 
 import androidx.appcompat.app.AppCompatActivity;
 import io.paperdb.Paper;
-
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Explode;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 
 public class Lesson1 extends AppCompatActivity {
 
@@ -22,10 +22,12 @@ public class Lesson1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson1);
         fa = this;
-
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
         LinearLayout linlay = findViewById(R.id.linlay);
@@ -59,6 +61,8 @@ public class Lesson1 extends AppCompatActivity {
         txt_1.setTextSize(17f);
         txt_2.setTextSize(17f);
         txt_3.setTextSize(17f);
+
+
 
     }
 

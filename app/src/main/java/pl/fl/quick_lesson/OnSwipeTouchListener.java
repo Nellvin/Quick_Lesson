@@ -71,19 +71,21 @@ public class OnSwipeTouchListener implements OnTouchListener {
             if(appName=="lesson1") {
                 myIntent =new Intent(ctx, Lesson2.class);
                 ctx.startActivity(myIntent);
+                Lesson1.fa.overridePendingTransition(R.anim.slide_in_right, android.R.anim.fade_out);
                 Lesson1.fa.finish();
             }
             if(appName=="lesson2") {
                 myIntent =new Intent(ctx, Lesson3.class);
                 ctx.startActivity(myIntent);
+                Lesson2.fa.overridePendingTransition(R.anim.slide_in_right, android.R.anim.fade_out);
                 Lesson2.fa.finish();
             }
             if(appName=="lesson3") {
                 myIntent =new Intent(ctx, Lesson1.class);
                 ctx.startActivity(myIntent);
+                Lesson3.fa.overridePendingTransition(R.anim.slide_in_right, android.R.anim.fade_out);
                 Lesson3.fa.finish();
             }
-
         }
 
     }
@@ -95,17 +97,20 @@ public class OnSwipeTouchListener implements OnTouchListener {
             if(appName=="lesson1") {
                 myIntent =new Intent(ctx, Lesson3.class);
                 ctx.startActivity(myIntent);
+                Lesson1.fa.overridePendingTransition(R.anim.slide_in_left, android.R.anim.fade_out);
                 Lesson1.fa.finish();
 
             }
             if(appName=="lesson2") {
                 myIntent =new Intent(ctx, Lesson1.class);
                 ctx.startActivity(myIntent);
+                Lesson2.fa.overridePendingTransition(R.anim.slide_in_left, android.R.anim.fade_out);
                 Lesson2.fa.finish();
             }
             if(appName=="lesson3") {
                 myIntent =new Intent(ctx, Lesson2.class);
                 ctx.startActivity(myIntent);
+                Lesson3.fa.overridePendingTransition(R.anim.slide_in_left, android.R.anim.fade_out);
                 Lesson3.fa.finish();
             }
 

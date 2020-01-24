@@ -6,13 +6,13 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="397dp"
         android:layout_height="wrap_content"
-        android:text="Pytanie 2.\Liczba krasnali we Wrocławiu"
-        android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
-        android:textSize="20dp"/>
+        android:text="Pytanie 1.\nW którym roku został wytyczony rynek?"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <!-- add RadioGroup which contain the many RadioButton-->
 
@@ -31,30 +31,29 @@
             android:id="@+id/radia_id1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="426"
+            android:text="1422"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radia_id2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="223"
+            android:text="1242"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radia_id3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="356"
+            android:text="1224"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radia_id4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="500+"
+            android:text="1424"
             android:textSize="20dp" />
-
     </RadioGroup>
 
     <!-- add clear button for clear the selected item-->

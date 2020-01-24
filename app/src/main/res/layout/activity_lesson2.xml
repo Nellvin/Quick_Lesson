@@ -21,6 +21,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Lekcja 2"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <com.alphamovie.lib.AlphaMovieView
                 android:id="@+id/video_player"

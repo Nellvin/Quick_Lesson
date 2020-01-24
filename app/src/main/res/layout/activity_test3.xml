@@ -8,9 +8,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="W którym roku Tatarzy najechali Wrocław?"
+        android:text="Pytanie 3.\W którym roku Tatarzy najechali Wrocław?"
         android:textStyle="bold"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
         android:textSize="20dp"/>
 
     <!-- add RadioGroup which contain the many RadioButton-->
@@ -21,7 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="150dp"
+        android:paddingVertical="10dp">
 
         <!-- In RadioGroup create the 1 Radio Button-->
         <!-- like this we will add some more Radio Button-->
@@ -62,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="300dp"
-        android:text="Kolejne"
+        android:text="Koniec"
         android:textSize="20dp"
         android:textStyle="bold" />
 

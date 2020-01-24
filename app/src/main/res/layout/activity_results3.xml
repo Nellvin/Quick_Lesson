@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pytanie 2.\Liczba krasnali we Wrocławiu"
+        android:text="Pytanie 3.\nW którym roku Tatarzy najechali Wrocław?"
         android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
@@ -22,8 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"
-        android:layout_marginTop="150dp"
-        android:paddingVertical="10dp">
+        android:layout_marginTop="150dp"        android:paddingVertical="10dp">
 
         <!-- In RadioGroup create the 1 Radio Button-->
         <!-- like this we will add some more Radio Button-->
@@ -31,30 +30,29 @@
             android:id="@+id/radia_id1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="426"
+            android:text="1241"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radia_id2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="223"
+            android:text="1242"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radia_id3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="356"
+            android:text="1341"
             android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/radia_id4"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="500+"
+            android:text="1424"
             android:textSize="20dp" />
-
     </RadioGroup>
 
     <!-- add clear button for clear the selected item-->
@@ -65,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="300dp"
-        android:text="Kolejne"
+        android:text="Koniec"
         android:textSize="20dp"
         android:textStyle="bold" />
 

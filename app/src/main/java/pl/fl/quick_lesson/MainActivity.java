@@ -45,10 +45,11 @@ public class MainActivity extends AppCompatActivity {
         results = findViewById(R.id.button6);
 
         lesson.setText("Lekcje");
-        test.setText("Test1");
+        test.setText("Test");
         results.setText("Wyniki");
 
         results.setEnabled(false);
+        test.setEnabled(false);
 
         lesson.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,9 +65,8 @@ public class MainActivity extends AppCompatActivity {
         results.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ar = Paper.book().read("contacts");
-                Toast toast = Toast.makeText(getApplicationContext(), ""+ar.size(), Toast.LENGTH_SHORT);
-                toast.show();
+                Intent intent = new Intent(MainActivity.this, Results1.class);
+                startActivity(intent);
             }
         });
         test.setOnClickListener(new View.OnClickListener() {
@@ -88,12 +88,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        if(Paper.book().read("test1anwser") != null){
-            if((boolean)(Paper.book().read("test1anwser")) == true){
+        if(Paper.book().read("test1anwser") != null&&Paper.book().read("test2anwser") != null&&Paper.book().read("test2anwser") != null){
+            if( ((boolean)Paper.book().read("test1anwser"))&&((boolean)Paper.book().read("test2anwser"))&&((boolean)Paper.book().read("test3anwser"))){
                 Log.d("IFNULL", String.valueOf(Paper.book().read("test1")));
             results.setEnabled(true);
             }else{
                 results.setEnabled(false);
+            }
+        }
+        if(Paper.book().read("3lesson")!=null){
+            if( Paper.book().read("3lesson")){
+                test.setEnabled(true);
             }
         }
     }

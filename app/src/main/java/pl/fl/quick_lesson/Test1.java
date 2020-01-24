@@ -6,6 +6,7 @@ import io.paperdb.Paper;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -20,9 +21,9 @@ public class Test1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-        // Bind the components to their respective objects
-        // by assigning their IDs
-        // with the help of findViewById() method
+
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         submit = findViewById(R.id.submit);
         radioGroup = findViewById(R.id.groupradio);
 
@@ -58,6 +59,7 @@ public class Test1 extends AppCompatActivity {
 
                 Intent intent = new Intent(Test1.this, Test2.class);
                 startActivity(intent);
+                Test1.this.finish();
             }
         });
 

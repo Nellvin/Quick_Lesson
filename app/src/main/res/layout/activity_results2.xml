@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pytanie 2.\Liczba krasnali we Wrocławiu"
+        android:text="Pytanie 2.\nLiczba krasnali we Wrocławiu"
         android:textStyle="bold"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
@@ -54,7 +54,6 @@
             android:layout_height="wrap_content"
             android:text="500+"
             android:textSize="20dp" />
-
     </RadioGroup>
 
     <!-- add clear button for clear the selected item-->
